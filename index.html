@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House With Tailwind CSS</title>
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- Font Family Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +17,34 @@
         .font-manrope {
             font-family: "Manrope", serif;
         }
-
+        .text-my-black {
+            color: #1c1c1c;
+        }
     </style>
 </head>
 
 <body class="font-manrope">
-    <main class="max-w-screen-xl mx-auto px-6 lg:px-8">
-        
+    <main class="max-w-screen-xl mx-auto px-6 lg:px-7">
+        <!-- Header Section -->
+        <header class="flex flex-col-reverse lg:flex-row items-center gap-8 py-20">
+            <div class="lg:w-1/2">
+                <h1 class="text-my-black text-[60px] font-extrabold leading-[80px]">It's good tea time at The Tea House</h1>
+                <p class="text-[#777] font-medium text-lg my-5">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white p-4 rounded-lg text-xl font-semibold">Explore More <i class="ri-arrow-right-up-line"></i></button>
+            </div>
+            <div class="lg:w-1/2 flex flex-col sm:flex-row items-center justify-center relative">
+                <div class="">
+                    <img src="./images/banner-img.png" alt="">
+                </div>
+                <div class="flex gap-5 shadow-lg rounded-lg p-6 sm:p-3 bg-white sm:absolute sm:left-20 sm:bottom-8 md:left-56 md:bottom-7 lg:left-10 lg:bottom-5">
+                    <img src="./images/star.png" alt="" class="">
+                    <div class="">
+                        <h5 class="text-my-black font-extrabold text-2xl">5.00</h5>
+                        <p class="">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </header>
     </main>
 </body>
 
